@@ -1,4 +1,21 @@
-# ForgeStack
+<p align="center">
+  <img src="assets/logo.webp" width="160" alt="ForgeStack logo">
+</p>
+
+<h1 align="center">ForgeStack</h1>
+
+<p align="center"><i>Entity, item, XP-orb, and spawner stacking — fewer entities, zero clutter.</i></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-ff7b2e?style=for-the-badge" alt="version 1.0.0">
+  <img src="https://img.shields.io/badge/Paper-26.3-2f9e6e?style=for-the-badge" alt="Paper 26.3">
+  <img src="https://img.shields.io/badge/Java-25-f89820?style=for-the-badge" alt="Java 25">
+  <img src="https://img.shields.io/badge/13_tests_passing-2563eb?style=for-the-badge" alt="13 tests passing">
+  <img src="https://img.shields.io/badge/PDC_powered-b565d8?style=for-the-badge" alt="PDC powered">
+  <img src="https://img.shields.io/badge/dependencies-zero-6b7280?style=for-the-badge" alt="zero dependencies">
+</p>
+
+---
 
 ForgeStack is an original, dependency-free Paper plugin that stacks entities, ground items, XP orbs, and mob spawners to cut server entity counts and visual clutter. Stack sizes are stored in the Persistent Data Container of a single representative entity, names render through Adventure with range-limited nameplates, and killing a stack multiplies its drops and EXP without duplicating equipment. Everything is configurable, and every user-facing string supports MiniMessage.
 
@@ -93,3 +110,7 @@ bash build.sh
 ## License
 
 Not yet chosen — contact the author before redistributing.
+
+---
+
+<p align="center"><i>Part of the <a href="https://github.com/ChristopherIrwin">Forge</a> plugin suite — original implementations, zero dependencies.</i></p>
