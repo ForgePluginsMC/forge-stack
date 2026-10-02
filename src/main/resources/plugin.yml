@@ -1,0 +1,27 @@
+name: ForgeStack
+version: 1.0.0
+main: com.forge.stack.ForgeStack
+api-version: '26.3'
+author: Forge
+description: Entity, item and spawner stacking with hologram counts. Dependency-free.
+website: https://github.com/forge-builder
+
+commands:
+  fstack:
+    description: ForgeStack admin commands.
+    usage: /fstack <reload|stackall|clearall|givespawner|info>
+    permission: forgestack.admin
+
+permissions:
+  forgestack.admin:
+    description: Full access to /fstack commands.
+    default: op
+  forgestack.bypass:
+    description: Owned/tamed entities are never stacked.
+    default: false
+  forgestack.spawner.silktouch:
+    description: Breaking a stacked spawner drops its stacked spawner item.
+    default: op
+  forgestack.egg:
+    description: Right-click a spawner with a spawn egg to change its type.
+    default: op

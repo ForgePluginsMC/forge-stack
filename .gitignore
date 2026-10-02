@@ -1,0 +1,20 @@
+# Build outputs
+build/
+target/
+out/
+*.class
+*.jar
+
+# IDE
+*.iml
+.idea/
+.vscode/
+.eclipse/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

@@ -1,0 +1,76 @@
+# ------------------------------------------------------------------
+# ForgeStack 1.0.0 — configuration
+# All user-facing text supports MiniMessage. Placeholders:
+#   entity-name-format: <count> <type>
+#   spawner hologram/item formats: <count> <type>
+# ------------------------------------------------------------------
+
+# Radius (blocks) in which same-type mobs merge into a stack.
+merge-radius: 5.0
+
+# Default maximum mobs per stack.
+max-stack-size: 100
+
+# Per-entity-type overrides (entity type names, e.g. ZOMBIE, COW).
+per-type-max:
+  ZOMBIE: 50
+
+# Entity types that never stack.
+no-stack-types:
+  - VILLAGER
+  - WANDERING_TRADER
+  - ENDER_DRAGON
+  - WITHER
+  - ARMOR_STAND
+  - PLAYER
+
+# Spawn reasons that never merge on spawn (the periodic scan still merges them
+# unless spawner-only-mode is on).
+skip-spawn-reasons:
+  - CUSTOM
+  - COMMAND
+  - SPAWNER_EGG
+
+# When true, only spawner-born mobs stack.
+spawner-only-mode: false
+
+# Display name of a stacked entity.
+entity-name-format: "<gray><count>x <white><type>"
+
+# Multiply a killed stack's drops and EXP by its size.
+multiply-drops: true
+# Hard cap on the drop/EXP multiplier (anti-dupe safety).
+max-drop-multiplier: 64
+
+# Radius (blocks) in which ground items merge.
+item-merge-radius: 3.0
+
+# Maximum items per merged ground stack.
+max-item-stack: 500
+
+# Per-material overrides for ground item stacks.
+per-material-max: {}
+
+# Radius (blocks) in which XP orbs merge.
+xp-merge-radius: 4.0
+
+# How often (ticks) the merge scan runs. 200 = 10 seconds.
+scan-interval-ticks: 200
+
+# How far away (blocks) a player must be to see a stack's "10x Salmon"
+# nameplate. Names hide beyond this range to cut visual noise.
+name-visible-range: 24.0
+
+# How often (ticks) nameplate visibility is re-checked. Lower = names
+# appear/disappear more responsively as you walk around.
+name-visible-interval-ticks: 40
+
+spawner:
+  # Extra mobs spawned per spawner cycle for a stacked spawner (beyond the vanilla one).
+  per-cycle-cap: 4
+  # Floating label above stacked spawners.
+  hologram-format: "<gold><count>x <type> spawner"
+  # Name of stacked spawner items from /fstack givespawner.
+  item-name-format: "<gold><count>x <type> Spawner"
+  # When true, breaking a stacked spawner only drops its item with Silk Touch.
+  break-requires-silk-touch: true
